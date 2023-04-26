@@ -1,0 +1,59 @@
+[http "https://github.com"]
+	proxy = socks5://192.168.160.23:10082
+[http "https://gist.github.com"]
+        proxy = socks5://192.168.160.23:10082
+[http "https://git.alpinelinux.org"]
+        proxy = socks5://192.168.160.23:10082
+[http "https://pigweed.googlesource.com"]
+	proxy = socks5://192.168.160.23:10082
+[http "https://git.savannah.gnu.org"]
+	proxy = socks5://192.168.160.23:10082
+[http "https://git.kernel.org"]
+	proxy = socks5://192.168.160.23:10082
+[http "https://git.toradex.com"]
+	proxy = socks5://192.168.160.23:10082
+[http "https://git.buildroot.net"]
+	proxy = socks5://192.168.160.23:10082
+[http "https://boringssl.googlesource.com"]
+	proxy = socks5://192.168.160.23:10082
+[http "https://salsa.debian.org"]
+	proxy = socks5://192.168.160.23:10082
+[user]
+	email = niusan@ehomepoct.com
+	name = Niusan
+[core]
+	editor = 'vim'
+	quotepath = false
+	longpaths = true
+	autocrlf = input
+	fsmonitor = true
+	attributesfile = ~/.gitattributes
+[i18n]
+	logoutputencoding = utf-8
+[i18n "commit"]
+	encoding = utf-8
+[gui]
+	encoding = utf-8
+[pull]
+	rebase = true
+[http]
+	postBuffer = 524288000
+[init]
+	defaultBranch = main
+[hub]
+	protocol = ssh
+[alias]
+	co = checkout
+	ci = commit
+	br = branch
+	st = status
+	pl = pull
+	ps = push
+	res = restore
+	dt = difftool
+	mt = mergetool
+	df = diff
+[color]
+	ui = true
+[fetch]
+	showForcedUpdates = true

@@ -99,6 +99,7 @@ pub fn build(
     exec::check_call(format!("chroot {out_dir} rm /bin/sh"))?;
     exec::check_call(format!("chroot {out_dir} ln -s /bin/bash /bin/sh"))?;
     extract_file("bashrc", &format!("{}/.bashrc", out_dir))?;
+    extract_file("gitconfig", &format!("{}/.gitconfig", out_dir))?;
     extract_file("get_kvers.sh", &format!("{}/get_kvers.sh", out_dir))?;
 
     // cleanup
@@ -119,7 +120,7 @@ pub fn build(
     let apt_cmd = format!("grep -ri _apt:x:100:65534 {passwd} && sed -i -e 's/_apt:x:100:65534/_apt:x:100:3003/' {passwd}");
     exec::check_call(apt_cmd)?;
 
-    let dns = "4.2.2.2";
+    let dns = "114.114.114.114";
     // Add a default DNS server
     exec::call(format!(
         "echo \"nameserver {dns}\" > {out_dir}/etc/resolv.conf"
