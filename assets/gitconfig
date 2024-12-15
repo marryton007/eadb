@@ -19,8 +19,8 @@
 [http "https://salsa.debian.org"]
 	proxy = socks5://192.168.160.23:10082
 [user]
-	email = niusan@ehomepoct.com
-	name = Niusan
+	email = marryton007@gmail.com
+	name = marryton007
 [core]
 	editor = 'vim'
 	quotepath = false
