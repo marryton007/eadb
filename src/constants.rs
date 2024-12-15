@@ -1,6 +1,6 @@
 use include_dir::{include_dir, Dir};
 
-pub(crate) const DEFAULT_DEBIAN_DISTRO: &str = "bullseye";
+pub(crate) const DEFAULT_DEBIAN_DISTRO: &str = "bookworm";
 
 pub(crate) const DEFAULT_DEBIAN_REPO: &str = "https://mirrors.ustc.edu.cn/debian/";
 
